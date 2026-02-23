@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetFlow — планируй бюджет легко</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <strong>BudgetFlow</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#about">О сервисе</a>
+                    <a class="navbar-item" href="#features">Преимущества</a>
+                    <a class="navbar-item" href="#testimonials">Отзывы</a>
+                    <a class="navbar-item" href="#contact">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-primary is-halfheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">
+                    Управляй бюджетом <br> без лишних усилий
+                </h1>
+                <h2 class="subtitle is-4">
+                    BudgetFlow — интуитивный инструмент для учёта доходов и расходов, <br> постановки финансовых целей и аналитики.
+                </h2>
+                <div class="buttons is-centered">
+                    <a href="#signup" class="button is-large is-light">
+                        <span>Попробовать бесплатно</span>
+                        <span class="icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <a href="#how-it-works" class="button is-large is-outlined is-light">
+                        <span class="icon">
+                            <i class="fas fa-play"></i>
+                        </span>
+                        <span>Как это работает</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <h2 class="title is-2">О сервисе BudgetFlow</h2>
+                    <p class="subtitle is-5">Мы помогаем обрести финансовую свободу</p>
+                    <p>BudgetFlow создан для тех, кто хочет чётко понимать, куда уходят деньги, и планировать крупные покупки. Без сложных таблиц и бухгалтерии. Просто, наглядно, эффективно.</p>
+                    <br>
+                    <p><span class="icon has-text-success"><i class="fas fa-check-circle"></i></span> Синхронизация с банками</p>
+                    <p><span class="icon has-text-success"><i class="fas fa-check-circle"></i></span> Категории расходов</p>
+                    <p><span class="icon has-text-success"><i class="fas fa-check-circle"></i></span> Ежемесячные отчёты</p>
+                </div>
+                <div class="column is-6 has-text-centered">
+                    <img src="https://via.placeholder.com/500x400?text=BudgetFlow+App" alt="Приложение BudgetFlow" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered">Почему выбирают BudgetFlow</h2>
+            <div class="columns is-multiline">
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fas fa-wallet fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-5">Учёт доходов</p>
+                                </div>
+                            </div>
+                            <div class="content">Фиксируйте поступления из любых источников: зарплата, фриланс, инвестиции.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fas fa-chart-line fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-5">Аналитика</p>
+                                </div>
+                            </div>
+                            <div class="content">Наглядные графики и диаграммы покажут, на что уходят деньги, и где можно сэкономить.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="icon is-large has-text-primary">
+                                        <i class="fas fa-bullseye fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-5">Финансовые цели</p>
+                                </div>
+                            </div>
+                            <div class="content">Ставьте цели (машина, отпуск) и следите за прогрессом.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered">Что говорят пользователи</h2>
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <p>«BudgetFlow помог мне накопить на отпуск всего за полгода! Очень удобный интерфейс.»</p>
+                            <p class="has-text-weight-bold">— Анна, дизайнер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <p>«Перестал тратить деньги на ненужные вещи, потому что вижу всю статистику в одном месте.»</p>
+                            <p class="has-text-weight-bold">— Дмитрий, предприниматель</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <p>«Лучшее приложение для семейного бюджета. Рекомендую!»</p>
+                            <p class="has-text-weight-bold">— Елена, бухгалтер</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="title is-5">BudgetFlow</h4>
+                    <p>Ваш личный финансовый помощник.</p>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5">Контакты</h4>
+                    <p><span class="icon"><i class="fas fa-envelope"></i></span> support@budgetflow.ru</p>
+                    <p><span class="icon"><i class="fas fa-phone"></i></span> +7 (495) 123-45-67</p>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5">Мы в соцсетях</h4>
+                    <div class="buttons">
+                        <a href="#" class="button is-medium is-link is-outlined">
+                            <span class="icon"><i class="fab fa-telegram"></i></span>
+                        </a>
+                        <a href="#" class="button is-medium is-link is-outlined">
+                            <span class="icon"><i class="fab fa-vk"></i></span>
+                        </a>
+                        <a href="#" class="button is-medium is-link is-outlined">
+                            <span class="icon"><i class="fab fa-instagram"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content has-text-centered">
+                <p>&copy; 2026 BudgetFlow. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('#navbarMenu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

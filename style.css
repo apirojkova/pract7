@@ -1,0 +1,34 @@
+.hero.is-primary {
+    background: linear-gradient(135deg, #00d1b2, #009e8a);
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.section {
+    padding: 4rem 1.5rem;
+}
+
+.icon.has-text-success {
+    margin-right: 0.5rem;
+}
+
+.footer .button.is-outlined {
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section .columns.is-vcentered {
+        flex-direction: column-reverse;
+    }
+    .section .column.is-6 img {
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+}
