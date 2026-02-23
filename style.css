@@ -32,3 +32,24 @@
         margin-bottom: 2rem;
     }
 }
+
+.accordion-card .card-header {
+    cursor: pointer;
+    background-color: #fafafa;
+    transition: background-color 0.2s;
+}
+.accordion-card .card-header:hover {
+    background-color: #f0f0f0;
+}
+.accordion-card .card-header .icon {
+    transition: transform 0.3s;
+}
+.accordion-card.is-active .card-header .icon {
+    transform: rotate(180deg);
+}
+.accordion-card .card-content {
+    display: none;
+}
+.accordion-card.is-active .card-content {
+    display: block;
+}

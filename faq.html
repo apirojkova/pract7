@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | BudgetFlow</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .accordion-card .card-header {
+            cursor: pointer;
+        }
+        .accordion-card .card-header .icon {
+            transition: transform 0.3s;
+        }
+        .accordion-card.is-active .card-header .icon {
+            transform: rotate(180deg);
+        }
+        .accordion-card .card-content {
+            display: none;
+        }
+        .accordion-card.is-active .card-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>BudgetFlow</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html#about">О сервисе</a>
+                    <a class="navbar-item" href="index.html#features">Преимущества</a>
+                    <a class="navbar-item" href="index.html#testimonials">Отзывы</a>
+                    <a class="navbar-item is-active" href="faq.html">FAQ</a>
+                    <a class="navbar-item" href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" style="margin-top: 3rem;">
+        <div class="container">
+            <h1 class="title is-1 has-text-centered">Часто задаваемые вопросы</h1>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="accordion">
+                        <div class="card accordion-card">
+                            <header class="card-header" onclick="toggleAccordion(this)">
+                                <p class="card-header-title">Как начать пользоваться сервисом?</p>
+                                <span class="icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    Зарегистрируйтесь на сайте, подтвердите email и начните пользоваться бесплатным тарифом. Все функции доступны сразу после регистрации.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-card">
+                            <header class="card-header" onclick="toggleAccordion(this)">
+                                <p class="card-header-title">Есть ли мобильное приложение?</p>
+                                <span class="icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    Да, наше приложение доступно в App Store и Google Play. Все данные синхронизируются между веб-версией и приложением.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-card">
+                            <header class="card-header" onclick="toggleAccordion(this)">
+                                <p class="card-header-title">Сколько стоит использование?</p>
+                                <span class="icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    У нас есть бесплатный тариф с базовыми функциями. Премиум-тариф стоит 299 ₽ в месяц и открывает расширенную аналитику и неограниченное количество категорий.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-card">
+                            <header class="card-header" onclick="toggleAccordion(this)">
+                                <p class="card-header-title">Безопасны ли мои данные?</p>
+                                <span class="icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    Мы используем шифрование и строго соблюдаем политику конфиденциальности. Ваши данные не передаются третьим лицам.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-card">
+                            <header class="card-header" onclick="toggleAccordion(this)">
+                                <p class="card-header-title">Как связаться с поддержкой?</p>
+                                <span class="icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    Вы можете написать нам через форму на странице <a href="contacts.html">Контакты</a> или отправить email на support@budgetflow.ru. Обычно отвечаем в течение часа.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="title is-5">BudgetFlow</h4>
+                    <p>Ваш личный финансовый помощник.</p>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5">Контакты</h4>
+                    <p><span class="icon"><i class="fas fa-envelope"></i></span> support@budgetflow.ru</p>
+                    <p><span class="icon"><i class="fas fa-phone"></i></span> +7 (495) 123-45-67</p>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5">Мы в соцсетях</h4>
+                    <div class="buttons">
+                        <a href="#" class="button is-medium is-link is-outlined"><span class="icon"><i class="fab fa-telegram"></i></span></a>
+                        <a href="#" class="button is-medium is-link is-outlined"><span class="icon"><i class="fab fa-vk"></i></span></a>
+                        <a href="#" class="button is-medium is-link is-outlined"><span class="icon"><i class="fab fa-instagram"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content has-text-centered">
+                <p>&copy; 2026 BudgetFlow. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('#navbarMenu');
+            if (burger) {
+                burger.addEventListener('click', () => {
+                    burger.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            }
+        });
+
+        function toggleAccordion(header) {
+            const card = header.closest('.accordion-card');
+            card.classList.toggle('is-active');
+        }
+    </script>
+</body>
+</html>
